@@ -303,10 +303,10 @@ public class Manager : MonoBehaviour {
             }
         } else if ((a1 + b2 + c3) == p2PatternA || (a1 + b2 + c3) == p2PatternB || (a1 + b2 + c3) == p2PatternC) { // horizontal
             if (a1 == "-") {
-                PlayOnSlot("a3");
+                PlayOnSlot("a1");
                 return;
             } else if (b2 == "-") {
-                PlayOnSlot("b3");
+                PlayOnSlot("b2");
                 return;
             } else if (c3 == "-") {
                 PlayOnSlot("c3");
@@ -317,10 +317,10 @@ public class Manager : MonoBehaviour {
                 PlayOnSlot("a3");
                 return;
             } else if (b2 == "-") {
-                PlayOnSlot("b3");
+                PlayOnSlot("b2");
                 return;
             } else if (c1 == "-") {
-                PlayOnSlot("c3");
+                PlayOnSlot("c1");
                 return;
             }
         }
@@ -399,10 +399,10 @@ public class Manager : MonoBehaviour {
             }
         } else if ((a1 + b2 + c3) == p1PatternA || (a1 + b2 + c3) == p1PatternB || (a1 + b2 + c3) == p1PatternC) { // horizontal
             if (a1 == "-") {
-                PlayOnSlot("a3");
+                PlayOnSlot("a1");
                 return;
             } else if (b2 == "-") {
-                PlayOnSlot("b3");
+                PlayOnSlot("b2");
                 return;
             } else if (c3 == "-") {
                 PlayOnSlot("c3");
@@ -413,10 +413,10 @@ public class Manager : MonoBehaviour {
                 PlayOnSlot("a3");
                 return;
             } else if (b2 == "-") {
-                PlayOnSlot("b3");
+                PlayOnSlot("b2");
                 return;
             } else if (c1 == "-") {
-                PlayOnSlot("c3");
+                PlayOnSlot("c1");
                 return;
             }
         }
@@ -427,9 +427,9 @@ public class Manager : MonoBehaviour {
             return;
         }
 
-        // can you trap the player
+        // can you trap the player?
 
-        // if there is nothing smart to do, the play random
+        // if there is nothing smart to do, then play random
         // pick a random slot from available slots
         var pickIndex = Random.Range(0, slots.Count - 1);
 
